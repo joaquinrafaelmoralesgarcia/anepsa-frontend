@@ -1,5 +1,7 @@
 # anepsa-frontend
 
+[![CI](https://github.com/joaquinrafaelmoralesgarcia/anepsa-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/joaquinrafaelmoralesgarcia/anepsa-frontend/actions/workflows/ci.yml)
+
 Interfaz web para el sistema de gestión de órdenes de avalúo de ANEPSA.
 
 **Stack:** React · Vite · React Router · Axios · Socket.io-client · Vitest · Testing Library
