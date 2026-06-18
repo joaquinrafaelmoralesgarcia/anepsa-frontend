@@ -12,6 +12,8 @@ import Usuarios from './pages/Usuarios';
 import OrdenDetalle from './pages/OrdenDetalle';
 import ActividadAdmin from './pages/ActividadAdmin';
 import NotificacionesValuador from './pages/NotificacionesValuador';
+import PagoExitoso from './pages/PagoExitoso';
+import PagoCancelado from './pages/PagoCancelado';
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
           <Route path="/valuador/dashboard" element={<ProtectedRoute><RoleRoute role="valuador"><DashboardValuador /></RoleRoute></ProtectedRoute>} />
           <Route path="/valuador/ordenes/:id" element={<ProtectedRoute><RoleRoute role="valuador"><OrdenDetalle /></RoleRoute></ProtectedRoute>} />
           <Route path="/valuador/notificaciones" element={<ProtectedRoute><RoleRoute role="valuador"><NotificacionesValuador /></RoleRoute></ProtectedRoute>} />
+          <Route path="/pago-exitoso" element={<PagoExitoso />} />
+          <Route path="/pago-cancelado" element={<PagoCancelado />} />
           <Route path="/" element={<Navigate to="/login" replace />} />
           <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
